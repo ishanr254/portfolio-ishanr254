@@ -1,45 +1,37 @@
-# Welcome to Jekyll!
+# === Cornell MAE Portfolio — Minimal _config.yml (starter) ===
+# Replace the angle-bracket placeholders below before publishing.
+# For a "project site" under your account (recommended):
+#   url: "https://<YOUR_GITHUB_USERNAME>.github.io"   # NO trailing slash
+#   base_url: "/<YOUR_REPO_NAME>"                      # leading slash, no trailing
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# For an org-classroom repo (e.g., cornell-mae-ug.github.io/<repo>), set url to that org.
+# The template supports color schemes via `skin:` (e.g., aqua, crimson, graphite).
+title: "Ishan — Engineering Portfolio"
+name: "Ishan"
+email: your.email@domain.com
+url: "https://ishanr254.github.io"
+base_url: "/portfolio-ishanr254"
+skin: aqua
 
-
-# Site Settings
-locale                   : "en-US"
-title                    : Your Name
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : Your Name
-description              : Your Name - Projects and CV 
-baseurl                  : "" # Set this to your repo name 
-
-# Theme and Style
-theme: jekyll-theme-minimal
-color_scheme: light # light/default, dark, or aqua
-
-sass:
-  style: compressed
-
-# Outputting
-permalink: /:categories/:title/
-
+# Collections for projects (the template already defines these in layouts)
 collections:
-  pages:
-    output: true
   projects:
     output: true
-    permalink: /:collection/:path/
 
-# Markdown
+# Build options
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
+# Social (optional)
+github_username: <YOUR_GITHUB_USERNAME>
+linkedin: <YOUR_LINKEDIN_SLUG>
 
+# Navigation labels (optional)
+nav_links:
+  - title: Projects
+    url: /projects/
+  - title: CV
+    url: /cv/
+  - title: Contact
+    url: /#contact
